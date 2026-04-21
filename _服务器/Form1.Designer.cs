@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label_IP = new System.Windows.Forms.Label();
             this.label_Port = new System.Windows.Forms.Label();
             this.txt_Port = new System.Windows.Forms.TextBox();
@@ -85,12 +84,13 @@
             // 
             // btn_StartListen
             // 
-            this.btn_StartListen.Location = new System.Drawing.Point(654, 125);
+            this.btn_StartListen.Location = new System.Drawing.Point(607, 125);
             this.btn_StartListen.Name = "btn_StartListen";
-            this.btn_StartListen.Size = new System.Drawing.Size(105, 41);
+            this.btn_StartListen.Size = new System.Drawing.Size(152, 41);
             this.btn_StartListen.TabIndex = 4;
             this.btn_StartListen.Text = "开始监听";
             this.btn_StartListen.UseVisualStyleBackColor = true;
+            this.btn_StartListen.Click += new System.EventHandler(this.btn_StartListen_Click);
             // 
             // cbx_ClientSelect
             // 
@@ -98,7 +98,7 @@
             this.cbx_ClientSelect.FormattingEnabled = true;
             this.cbx_ClientSelect.Location = new System.Drawing.Point(785, 133);
             this.cbx_ClientSelect.Name = "cbx_ClientSelect";
-            this.cbx_ClientSelect.Size = new System.Drawing.Size(175, 29);
+            this.cbx_ClientSelect.Size = new System.Drawing.Size(307, 29);
             this.cbx_ClientSelect.TabIndex = 5;
             // 
             // txt_RecvMsg
@@ -132,12 +132,13 @@
             // 
             // btn_SendMsg
             // 
-            this.btn_SendMsg.Location = new System.Drawing.Point(855, 816);
+            this.btn_SendMsg.Location = new System.Drawing.Point(831, 816);
             this.btn_SendMsg.Name = "btn_SendMsg";
-            this.btn_SendMsg.Size = new System.Drawing.Size(105, 45);
+            this.btn_SendMsg.Size = new System.Drawing.Size(147, 45);
             this.btn_SendMsg.TabIndex = 9;
             this.btn_SendMsg.Text = "发送消息";
             this.btn_SendMsg.UseVisualStyleBackColor = true;
+            this.btn_SendMsg.Click += new System.EventHandler(this.btn_SendMsg_Click);
             // 
             // btn_Shake
             // 
@@ -173,57 +174,53 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1180, 38);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1180, 34);
             this.bindingNavigator1.TabIndex = 11;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
             // bindingNavigatorAddNewItem
             // 
             this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(40, 32);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(40, 28);
             this.bindingNavigatorAddNewItem.Text = "新添";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(53, 32);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(53, 28);
             this.bindingNavigatorCountItem.Text = "/ {0}";
             this.bindingNavigatorCountItem.ToolTipText = "总项数";
             // 
             // bindingNavigatorDeleteItem
             // 
             this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(40, 32);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(40, 28);
             this.bindingNavigatorDeleteItem.Text = "删除";
             // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(40, 32);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(40, 28);
             this.bindingNavigatorMoveFirstItem.Text = "移到第一条记录";
             // 
             // bindingNavigatorMovePreviousItem
             // 
             this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(40, 32);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(40, 28);
             this.bindingNavigatorMovePreviousItem.Text = "移到上一条记录";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 38);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 34);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -238,30 +235,28 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 38);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 34);
             // 
             // bindingNavigatorMoveNextItem
             // 
             this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(40, 32);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(40, 28);
             this.bindingNavigatorMoveNextItem.Text = "移到下一条记录";
             // 
             // bindingNavigatorMoveLastItem
             // 
             this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(40, 32);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(40, 28);
             this.bindingNavigatorMoveLastItem.Text = "移到最后一条记录";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 38);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 34);
             // 
             // txt_IP
             // 

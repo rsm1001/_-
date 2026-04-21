@@ -8,3 +8,4 @@ C:\Users\27185\Desktop\_服务器\_服务器\bin\Debug\_服务器.exe
 C:\Users\27185\Desktop\_服务器\_服务器\bin\Debug\_服务器.pdb
 C:\Users\27185\Desktop\_服务器\_服务器\obj\Debug\_服务器.exe
 C:\Users\27185\Desktop\_服务器\_服务器\obj\Debug\_服务器.pdb
+C:\Users\27185\Desktop\_服务器\_服务器\obj\Debug\_服务器.exe.config

@@ -53,7 +53,7 @@
             this.txtIP.Name = "txtIP";
             this.txtIP.Size = new System.Drawing.Size(160, 31);
             this.txtIP.TabIndex = 1;
-            this.txtIP.Text = "10.18.128.190";
+            this.txtIP.Text = "127.0.0.1";
             // 
             // labelPort
             // 
@@ -80,6 +80,7 @@
             this.btnConnect.TabIndex = 4;
             this.btnConnect.Text = "连接";
             this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // txtRecvShow
             // 
@@ -109,6 +110,7 @@
             this.btnSend.TabIndex = 7;
             this.btnSend.Text = "发送";
             this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // Form1
             // 
