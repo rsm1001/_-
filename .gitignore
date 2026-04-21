@@ -1,0 +1,22 @@
+# LobsterAI / OpenClaw Agent Files
+# 智能体产物 - 不提交到版本控制
+
+/.openclaw
+/memory
+AGENTS.md
+HEARTBEAT.md
+IDENTITY.md
+SOUL.md
+TOOLS.md
+USER.md
+MEMORY.md
+
+# 其他常见忽视项
+node_modules/
+.env
+.env.local
+*.log
+.DS_Store
+Thumbs.db
+.vs/
+.idea/

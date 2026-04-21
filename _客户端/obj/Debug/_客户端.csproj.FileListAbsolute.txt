@@ -1,0 +1,11 @@
+C:\Users\27185\Desktop\_服务器\_客户端\obj\Debug\_客户端.csproj.AssemblyReference.cache
+C:\Users\27185\Desktop\_服务器\_客户端\obj\Debug\_客户端.Properties.Resources.resources
+C:\Users\27185\Desktop\_服务器\_客户端\obj\Debug\_客户端.csproj.GenerateResource.cache
+C:\Users\27185\Desktop\_服务器\_客户端\obj\Debug\_客户端.csproj.CoreCompileInputs.cache
+C:\Users\27185\Desktop\_服务器\_客户端\bin\Debug\_客户端.exe.config
+C:\Users\27185\Desktop\_服务器\_客户端\bin\Debug\_客户端.exe
+C:\Users\27185\Desktop\_服务器\_客户端\bin\Debug\_客户端.pdb
+C:\Users\27185\Desktop\_服务器\_客户端\obj\Debug\_客户端.exe
+C:\Users\27185\Desktop\_服务器\_客户端\obj\Debug\_客户端.pdb
+C:\Users\27185\Desktop\_服务器\_客户端\obj\Debug\_客户端.exe.config
+C:\Users\27185\Desktop\_服务器\_客户端\obj\Debug\_客户端.Form1.resources
